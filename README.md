@@ -1,6 +1,8 @@
 # This is
 an extension to inspect `chrome.tabs.captureVisibleTab`'s specification.
 
+[`captureVisibleTab` changes its result implicitly - Google Product Forum](https://productforums.google.com/forum/#!category-topic/chrome/report-a-problem-and-get-troubleshooting-help/mac/35-Beta/bgarjaYuX78)
+
 # The Problem is
 
 `chrome.tabs.captureVisibleTab` changes its result by the combination of permission declaration and its trigger.
