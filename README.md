@@ -14,7 +14,7 @@ such as
 
 # Why it's problem
 Just to capture current page, we (developers) don't need and also want to request users `<all_urls>` permission but `activeTab`.
-Requesting `<all_urls>` permission, users might be sinsitive to install extensions.
+Requesting `<all_urls>` permission, users might be sensitive to install extensions.
 `permissions` field in `manifest.json` should resolve this users anxieties, so these behaviors of `permissions` can embarrass developers.
 
 # To realize behaviors
