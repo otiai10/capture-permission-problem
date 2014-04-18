@@ -3,6 +3,15 @@ an extension to inspect `chrome.tabs.captureVisibleTab`'s specification.
 
 [`captureVisibleTab` changes its result implicitly - Google Product Forum](https://productforums.google.com/forum/#!category-topic/chrome/report-a-problem-and-get-troubleshooting-help/mac/35-Beta/bgarjaYuX78)
 
+# THIS PROBLEM IS SOLVED!
+See https://developer.chrome.com/extensions/activeTab#invoking-activeTab
+
+> ... In contrast, an extension with the activeTab permission only obtains access to a tab in response to an explicit user gesture. ... 
+
+Developer defined keyboard-events are *NOT* granted as "explicit user gestures".
+
+Use `"commands"` declaration in `manifest.json` instead, like [56ee16507131fb6a3066e195baaa9dce2ed5e53c](https://github.com/otiai10/capture-permission-problem/commit/56ee16507131fb6a3066e195baaa9dce2ed5e53c).
+
 # The Problem is
 
 `chrome.tabs.captureVisibleTab` changes its result by the combination of permission declaration and its trigger.
